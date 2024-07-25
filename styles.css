@@ -268,7 +268,7 @@ html, body {
 
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
