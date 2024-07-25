@@ -268,9 +268,17 @@ html, body {
 
 .timeline {
     position: relative;
-    max-width: 800px;
-    margin: 2rem 0; /* Remove auto margin */
-    padding: 0 1rem 0 0; /* Remove left padding */
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--highlight-color);
 }
 
 .timeline-item {
@@ -280,65 +288,58 @@ html, body {
 
 .timeline-content {
     background-color: var(--secondary-color);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reduced padding */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+    position: relative; /* Add this line */
 }
 
 .timeline-content:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.timeline-date {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 0.9rem;
-    color: var(--highlight-color);
-    font-weight: bold;
+    transform: translateY(-5px) translateX(10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-content h3 {
     margin-top: 0;
-    padding-right: 6rem; /* Make space for the date */
     color: var(--highlight-color);
+    font-weight: 600;
+    padding-right: 100px; /* Add this line to make space for the date */
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+.timeline-date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
 }
 
 .view-button {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     background: linear-gradient(45deg, var(--highlight-color), var(--accent-color));
     color: var(--bg-color);
     text-decoration: none;
-    border-radius: 0.25rem;
+    border-radius: 8px;
     font-weight: 500;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .view-button:hover {
-    transform: translateY(-0.125rem);
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .view-button i {
-    margin-right: 0.3125rem;
-}
-
-@media (max-width: 768px) {
-    .timeline-date {
-        position: static;
-        display: block;
-        margin-bottom: 0.5rem;
-    }
-
-    .timeline-content h3 {
-        padding-right: 0;
-    }
+    margin-right: 5px;
 }
 
 a:focus,
@@ -542,4 +543,3 @@ footer {
         margin-top: 1rem; /* Reduce top margin of footer on mobile */
     }
 }
-
