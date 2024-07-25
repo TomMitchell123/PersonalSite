@@ -316,7 +316,7 @@ html, body {
     top: 20px;
     right: 20px;
     font-size: 0.9rem;
-    color: var(--text-color);
+    color: var(--highlight-color);
     opacity: 0.8;
 }
 
