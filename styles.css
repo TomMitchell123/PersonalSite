@@ -309,10 +309,10 @@ html, body {
     margin: 0;
 }
 
-.download-button {
+.view-button {
     display: inline-block;
-    margin-top: 0.5rem; /* Reduced margin */
-    padding: 0.5rem 1rem; /* Reduced padding */
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
     background: linear-gradient(45deg, var(--highlight-color), var(--accent-color));
     color: var(--bg-color);
     text-decoration: none;
@@ -322,12 +322,12 @@ html, body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.download-button:hover {
+.view-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.download-button i {
+.view-button i {
     margin-right: 5px;
 }
 
@@ -503,6 +503,33 @@ footer {
 
     .main-nav li {
         margin: 5px;
+    }
+
+    .container {
+        padding-top: 20px; /* Reduced top padding for mobile */
+    }
+
+    .section {
+        padding: 2rem 1.5rem; /* Further reduced padding for mobile */
+        margin: 0.5rem 0; /* Reduced margin for mobile */
+        min-height: auto; /* Remove min-height for mobile */
+    }
+
+    .contact-info {
+        padding-bottom: 1rem; /* Reduce bottom padding for contact section */
+    }
+
+    .contact-info .contact-buttons {
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        justify-content: center; /* Center buttons on mobile */
+    }
+
+    .social-button {
+        margin-bottom: 0.5rem; /* Add some space between wrapped buttons */
+    }
+
+    footer {
+        margin-top: 1rem; /* Reduce top margin of footer on mobile */
     }
 }
 
