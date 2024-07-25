@@ -320,6 +320,36 @@ html, body {
     font-weight: 600;
 }
 
+@media (max-width: 768px) {
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline-content h3 {
+        padding-right: 0;
+        margin-bottom: 25px; /* Add space below the title for the date */
+    }
+
+    .timeline-date {
+        position: static;
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .timeline::before {
+        left: 15px; /* Adjust the vertical line position */
+    }
+
+    .timeline {
+        padding-left: 30px; /* Adjust padding to accommodate the vertical line */
+    }
+
+    .timeline-item {
+        margin-bottom: 1.5rem; /* Reduce space between items on mobile */
+    }
+}
+
 .view-button {
     display: inline-block;
     margin-top: 0.5rem;
