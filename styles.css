@@ -293,7 +293,6 @@ html, body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    overflow: hidden; /* Add this to contain the date background */
 }
 
 .timeline-content:hover {
@@ -305,7 +304,7 @@ html, body {
     margin-top: 0;
     color: var(--highlight-color);
     font-weight: 600;
-    padding-right: 120px; /* Increased padding to accommodate larger date style */
+    padding-right: 120px; /* Make space for the date */
 }
 
 .timeline-content p {
@@ -314,21 +313,11 @@ html, body {
 
 .timeline-date {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     font-size: 0.9rem;
-    color: var(--bg-color);
-    background-color: var(--highlight-color);
-    padding: 8px 12px;
-    border-bottom-left-radius: 16px;
+    color: var(--highlight-color);
     font-weight: 600;
-    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.timeline-content:hover .timeline-date {
-    background-color: var(--accent-color);
-    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .view-button {
