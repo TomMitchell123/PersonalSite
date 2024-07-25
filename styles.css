@@ -454,33 +454,41 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding-top: 20px; /* Reduced top padding for mobile */
-    }
-
-    .section {
-        padding: 2rem 1.5rem; /* Further reduced padding for mobile */
-        margin: 0.5rem 0; /* Reduced margin for mobile */
-    }
-
     .header-content {
-        margin-top: 0; /* Removed negative margin */
+        margin-top: -120px; /* Adjust this value to move content higher */
     }
 
     .animated-name {
-        font-size: 3rem; /* Slightly reduced font size */
+        font-size: 3.5rem;
         padding: 0 10px;
         max-width: 90vw;
     }
 
+    .contact-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .social-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .social-button i {
+        font-size: 1rem;
+        margin-right: 0.3rem;
+    }
+
     .down-arrow {
-        margin-top: 0.5rem; /* Further reduced margin for mobile */
+        margin-top: 1rem; /* Reduce space above down arrow on mobile */
     }
 
     .main-nav {
-        position: fixed; /* Keep nav fixed on mobile */
-        background-color: var(--bg-color);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 10px 0;
     }
 
     .main-nav ul {
