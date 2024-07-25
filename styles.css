@@ -260,7 +260,9 @@ html, body {
     }
 
     .section {
-        min-height: 100vh;
+        min-height: auto;
+        padding: 2rem 1.5rem; /* Further reduced padding for mobile */
+        margin: 0.5rem 0; /* Reduced margin for mobile */
     }
 }
 
@@ -402,7 +404,7 @@ button:focus {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 1rem; /* Reduce top margin of footer on mobile */
 }
 
 .main-nav {
@@ -451,6 +453,8 @@ footer {
 
 .contact-info .contact-buttons {
     justify-content: flex-start;
+    margin-top: 1rem; /* Reduced margin */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 }
 
 @media (max-width: 768px) {
@@ -473,6 +477,7 @@ footer {
     .social-button {
         padding: 0.4rem 0.8rem;
         font-size: 0.8rem;
+        margin-bottom: 0.5rem; /* Add some space between wrapped buttons */
     }
 
     .social-button i {
