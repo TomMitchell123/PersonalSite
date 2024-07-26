@@ -25,7 +25,7 @@ html, body {
 
 .container {
     flex: 1;
-    padding: 60px 20px 20px; /* Added top padding to account for fixed nav */
+    padding: 20px; /* Reduced top padding */
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -547,7 +547,7 @@ footer {
     }
 
     .container {
-        padding-top: 20px; /* Reduced top padding for mobile */
+        padding-top: 10px; /* Further reduced top padding for mobile */
     }
 
     .section {
