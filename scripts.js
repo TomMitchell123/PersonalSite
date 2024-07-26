@@ -91,3 +91,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lazyImages.forEach(img => lazyLoadObserver.observe(img));
 });
+
