@@ -89,14 +89,14 @@ html, body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Change from center to flex-start */
     align-items: center;
     text-align: center;
-    padding-top: 60px; /* Added padding to account for fixed nav */
+    padding-top: 20vh; /* This will position the content roughly 20% from the top */
 }
 
 .header-content {
-    margin-top: -60px; /* Move content up slightly */
+    margin-top: 0; /* Remove the negative margin */
 }
 
 .header h1 {
@@ -122,7 +122,7 @@ html, body {
 .down-arrow {
     font-size: 3rem;
     color: var(--highlight-color);
-    margin-top: 0.5rem; /* Reduced margin */
+    margin-top: 1rem; /* Reduced margin */
     animation: bounce 2s infinite;
     cursor: pointer;
     opacity: 0;
@@ -500,7 +500,7 @@ footer {
 
 @media (max-width: 768px) {
     .header-content {
-        margin-top: -80px; /* Move content up slightly more on mobile */
+        margin-top: -120px; /* Adjust this value to move content higher */
     }
 
     .animated-name {
@@ -527,7 +527,7 @@ footer {
     }
 
     .down-arrow {
-        margin-top: 0.5rem; /* Reduce space above down arrow on mobile */
+        margin-top: 1rem; /* Reduce space above down arrow on mobile */
     }
 
     .main-nav {
