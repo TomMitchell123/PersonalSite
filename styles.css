@@ -96,7 +96,7 @@ html, body {
 }
 
 .header-content {
-    margin-top: 0; /* Removed negative margin */
+    margin-top: -60px; /* Move content up slightly */
 }
 
 .header h1 {
@@ -122,7 +122,7 @@ html, body {
 .down-arrow {
     font-size: 3rem;
     color: var(--highlight-color);
-    margin-top: 1rem; /* Reduced margin */
+    margin-top: 0.5rem; /* Reduced margin */
     animation: bounce 2s infinite;
     cursor: pointer;
     opacity: 0;
@@ -500,7 +500,7 @@ footer {
 
 @media (max-width: 768px) {
     .header-content {
-        margin-top: -120px; /* Adjust this value to move content higher */
+        margin-top: -80px; /* Move content up slightly more on mobile */
     }
 
     .animated-name {
@@ -527,7 +527,7 @@ footer {
     }
 
     .down-arrow {
-        margin-top: 1rem; /* Reduce space above down arrow on mobile */
+        margin-top: 0.5rem; /* Reduce space above down arrow on mobile */
     }
 
     .main-nav {
