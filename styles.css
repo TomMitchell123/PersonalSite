@@ -122,7 +122,7 @@ html, body {
 .down-arrow {
     font-size: 3rem;
     color: var(--highlight-color);
-    margin-top: 1rem; /* Reduced margin to move arrow lower */
+    margin-top: 2rem; /* Increased from 1rem to 2rem */
     animation: bounce 2s infinite;
     cursor: pointer;
     opacity: 0;
@@ -527,7 +527,7 @@ footer {
     }
 
     .down-arrow {
-        margin-top: 1rem; /* Reduced space above down arrow on mobile */
+        margin-top: 1.5rem; /* Increased from 1rem to 1.5rem for mobile */
     }
 
     .main-nav {
