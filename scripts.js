@@ -82,18 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     lazyImages.forEach(img => lazyLoadObserver.observe(img));
-
-    const restoreScrollPosition = () => {
-        const scrollPosition = sessionStorage.getItem('scrollPosition');
-        if (scrollPosition) {
-            window.scrollTo(0, parseInt(scrollPosition));
-            sessionStorage.removeItem('scrollPosition');
-        }
-    };
-
-    window.addEventListener('beforeunload', () => {
-        sessionStorage.setItem('scrollPosition', window.pageYOffset);
-    });
-
-    restoreScrollPosition();
 });
+
+
+

@@ -582,7 +582,7 @@ footer {
 }
 
 .gallery {
-    padding-top: 20px;
+    padding-top: 20px; 
 }
 
 .gallery-item {
@@ -680,4 +680,25 @@ html {
 
 .back-button i {
     margin-right: 0.5rem;
+}
+
+.gallery-header {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.gallery-container {
+    padding-top: 0;
+}
+
+.gallery {
+    padding-top: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
 }
