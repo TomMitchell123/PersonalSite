@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Mitchell - Photo Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-overlay"></div>
+    <div class="scroll-indicator"></div>
+    <header class="header">
+        <div class="header-content">
+            <h1>Photo Gallery</h1>
+            <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </header>
+    <main class="container">
+        <section class="section gallery">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="Images/sunset1.jpg" alt="Sunset 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/sunset2.jpg" alt="Sunset 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/sunset3.jpg" alt="Sunset 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/sunset4.jpg" alt="Sunset 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/sunset5.jpg" alt="Sunset 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Skiing1.jpg" alt="Skiing 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Skiing2.jpg" alt="Skiing 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Skiing3.jpg" alt="Skiing 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Skiing4.jpg" alt="Skiing 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Skiing5.jpg" alt="Skiing 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Flying1.jpg" alt="Flying 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Flying2.jpg" alt="Flying 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Flying3.jpg" alt="Flying 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Flying4.jpg" alt="Flying 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Flying5.jpg" alt="Flying 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Fishing1.jpg" alt="Fishing 1">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <footer>
+        <p class="copyright">&copy; 2024 Tom Mitchell. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
