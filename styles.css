@@ -572,14 +572,13 @@ footer {
         margin-top: 1rem;
     }
 }
-<<<<<<< HEAD
-=======
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
     padding: 1rem;
+    padding-top: 80px;
 }
 
 .gallery-item {
@@ -641,4 +640,38 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
->>>>>>> 7484873 (Add photos and update structure)
+
+.inline-link {
+    color: var(--text-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.inline-link:hover {
+    color: var(--highlight-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--highlight-color);
+    transform: translateY(-2px);
+}
+
+.back-button i {
+    margin-right: 0.5rem;
+}
