@@ -657,19 +657,19 @@ html {
 
 .back-button {
     display: inline-block;
-    margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background: linear-gradient(45deg, var(--highlight-color), var(--accent-color));
+    color: var(--bg-color);
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .back-button:hover {
-    background-color: var(--highlight-color);
     transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .back-button i {
