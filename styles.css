@@ -240,7 +240,8 @@ html, body {
     align-self: flex-start;
 }
 
-.project-link:hover {
+.project-link:hover,
+.view-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
@@ -417,8 +418,7 @@ button:focus {
 }
 
 .social-button:hover {
-    background-color: var(--highlight-color);
-    color: var(--bg-color);
+    color: var(--highlight-color);
     transform: translateY(-5px);
 }
 
@@ -664,36 +664,15 @@ html {
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .back-button:hover {
-    background-color: var(--highlight-color);
-    color: var(--bg-color);
+    color: var(--highlight-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .back-button i {
     margin-right: 0.5rem;
-}
-
-a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--highlight-color);
-}
-
-.project-link:hover,
-.view-button:hover,
-.back-button:hover,
-.social-button:hover {
-    background: linear-gradient(45deg, var(--accent-color), var(--highlight-color));
-    color: var(--bg-color);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
