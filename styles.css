@@ -574,12 +574,15 @@ footer {
     }
 }
 
-.gallery {
+.gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem;
-    padding-top: 80px;
+}
+
+.gallery {
+    padding-top: 20px;
 }
 
 .gallery-item {
