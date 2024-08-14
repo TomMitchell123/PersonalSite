@@ -60,14 +60,24 @@ document.addEventListener('DOMContentLoaded', () => {
         aboutSection.scrollIntoView({ behavior: 'smooth' });
     });
 
+    // Remove the existing event listeners for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
+        anchor.removeEventListener('click', smoothScroll);
     });
+
+    // Add new event listeners only for specific links
+    document.querySelector('.down-arrow').addEventListener('click', smoothScroll);
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', smoothScroll);
+    });
+
+    function smoothScroll(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 
     const lazyImages = document.querySelectorAll('img[data-src]');
     const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
@@ -83,4 +93,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lazyImages.forEach(img => lazyLoadObserver.observe(img));
 });
-
