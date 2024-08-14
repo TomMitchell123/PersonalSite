@@ -418,7 +418,8 @@ button:focus {
 }
 
 .social-button:hover {
-    color: var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
     transform: translateY(-5px);
 }
 
@@ -664,11 +665,12 @@ html {
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;
-    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .back-button:hover {
-    color: var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
