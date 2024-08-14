@@ -675,3 +675,24 @@ html {
 .back-button i {
     margin-right: 0.5rem;
 }
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: var(--highlight-color);
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.project-link:hover,
+.view-button:hover,
+.back-button:hover,
+.social-button:hover {
+    background: linear-gradient(45deg, var(--accent-color), var(--highlight-color));
+    color: var(--bg-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
