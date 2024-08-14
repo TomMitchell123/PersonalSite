@@ -587,6 +587,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    aspect-ratio: 1 / 1;
 }
 
 .gallery-item:hover {
@@ -658,18 +659,19 @@ html {
 .back-button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(45deg, var(--highlight-color), var(--accent-color));
-    color: var(--bg-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .back-button:hover {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .back-button i {
@@ -679,12 +681,11 @@ html {
 a {
     color: var(--text-color);
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: var(--highlight-color);
-    text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
 }
 
 .project-link:hover,
