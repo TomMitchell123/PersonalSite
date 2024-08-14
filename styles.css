@@ -644,12 +644,11 @@ footer {
 .inline-link {
     color: var(--text-color);
     text-decoration: underline;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .inline-link:hover {
     color: var(--highlight-color);
-    text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
 }
 
 html {
