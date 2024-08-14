@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedName.textContent = '';
     let index = 0;
 
-    // Create cursor span
     const cursorSpan = document.createElement('span');
     cursorSpan.className = 'cursor';
     animatedName.appendChild(cursorSpan);
@@ -19,16 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
             index++;
             setTimeout(typeEffect, 75);
         } else {
-            // Blink the cursor
             animatedName.classList.add('cursor-blink');
             setTimeout(() => {
                 animatedName.classList.remove('cursor-blink');
-                cursorSpan.style.display = 'none'; // Hide the cursor instead of removing it
-                
-                // Fade in contact buttons
+                cursorSpan.style.display = 'none';
                 contactButtons.style.opacity = '1';
-                
-                // Fade in down arrow after a short delay
                 setTimeout(() => {
                     downArrow.style.opacity = '1';
                 }, 500);
@@ -66,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
         aboutSection.scrollIntoView({ behavior: 'smooth' });
     });
 
-    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -76,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Lazy load images
     const lazyImages = document.querySelectorAll('img[data-src]');
     const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
