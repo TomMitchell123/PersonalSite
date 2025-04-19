@@ -1,0 +1,44 @@
+# robots.txt for www.tommitchell.me
+# Last updated: April 19, 2025
+
+# Allow all crawlers to access everything by default
+User-agent: *
+Allow: /
+
+# Explicitly allow important pages
+Allow: /index.html
+Allow: /images.html
+Allow: /styles.css
+Allow: /scripts.js
+
+# Allow access to image directories
+Allow: /Images/
+Allow: /Images/Project-Images/
+Allow: /Images/Sunsets/
+Allow: /Images/Skiing/
+Allow: /Images/Flying/
+Allow: /Images/Fishing/
+
+# Disallow any potential sensitive directories
+# (These don't exist on your site currently but are good practice)
+Disallow: /private/
+Disallow: /admin/
+Disallow: /drafts/
+Disallow: /temp/
+
+# Specific instructions for Google's image crawler
+User-agent: Googlebot-Image
+Allow: /Images/
+Allow: /*.jpeg$
+Allow: /*.jpg$
+Allow: /*.png$
+
+# Specific instructions for Bing's crawler
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay directive (optional - helps prevent server overload)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.tommitchell.me/sitemap.xml 

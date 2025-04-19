@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Main page -->
+  <url>
+    <loc>https://www.tommitchell.me/</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <!-- Add key images from your main page -->
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Project-Images/ConnectionsRacer.png</image:loc>
+      <image:title>Connections Racer Project</image:title>
+      <image:caption>A multiplayer version of the NYT Connections game</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Project-Images/TerpCourseWatch.png</image:loc>
+      <image:title>Terp Course Watch Project</image:title>
+      <image:caption>Course notification manager for UMD students</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Project-Images/AI-Counselor.png</image:loc>
+      <image:title>AI Counselor Project</image:title>
+      <image:caption>AI assistant for university course information</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Images gallery page -->
+  <url>
+    <loc>https://www.tommitchell.me/images.html</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    
+    <!-- Sunset images -->
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset1.jpeg</image:loc>
+      <image:title>Sunset Photography</image:title>
+      <image:caption>Beautiful sunset landscape</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset2.jpeg</image:loc>
+      <image:title>Sunset Photography</image:title>
+      <image:caption>Colorful evening sky</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset3.jpeg</image:loc>
+      <image:title>Sunset Photography</image:title>
+      <image:caption>Golden hour landscape</image:caption>
+    </image:image>
+    
+    <!-- Flying images -->
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Flying/Flying1.jpeg</image:loc>
+      <image:title>Flying Experience</image:title>
+      <image:caption>Aviation photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Flying/Flying2.jpeg</image:loc>
+      <image:title>Flying Experience</image:title>
+      <image:caption>View from the cockpit</image:caption>
+    </image:image>
+    
+    <!-- Skiing images -->
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing1.jpeg</image:loc>
+      <image:title>Skiing Adventures</image:title>
+      <image:caption>Winter sports photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing2.jpeg</image:loc>
+      <image:title>Skiing Adventures</image:title>
+      <image:caption>Mountain slopes</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Research poster PDF -->
+  <url>
+    <loc>https://www.tommitchell.me/AGU23-SOHO.pdf</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- CSS and JS resources -->
+  <url>
+    <loc>https://www.tommitchell.me/styles.css</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.tommitchell.me/scripts.js</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset> 
