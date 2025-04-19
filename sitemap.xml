@@ -36,27 +36,48 @@
     <image:image>
       <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset1.jpeg</image:loc>
       <image:title>Sunset Photography</image:title>
-      <image:caption>Beautiful sunset landscape</image:caption>
+      <image:caption>Sunset over a lake</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset2.jpeg</image:loc>
       <image:title>Sunset Photography</image:title>
-      <image:caption>Colorful evening sky</image:caption>
+      <image:caption>Sunset from a plane</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset3.jpeg</image:loc>
       <image:title>Sunset Photography</image:title>
-      <image:caption>Golden hour landscape</image:caption>
+      <image:caption>Sunset with clouds</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset4.jpeg</image:loc>
+      <image:title>Sunset Photography</image:title>
+      <image:caption>Sunset light rays</image:caption>
+    </image:image>
+     <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Sunsets/Sunset5.jpeg</image:loc>
+      <image:title>Sunset Photography</image:title>
+      <image:caption>Sunset with Chicago and the moon in the background</image:caption>
+    </image:image>
+
     
     <!-- Flying images -->
     <image:image>
       <image:loc>https://www.tommitchell.me/Images/Flying/Flying1.jpeg</image:loc>
       <image:title>Flying Experience</image:title>
-      <image:caption>Aviation photography</image:caption>
+      <image:caption>View from the cockpit</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.tommitchell.me/Images/Flying/Flying2.jpeg</image:loc>
+      <image:title>Flying Experience</image:title>
+      <image:caption>View from the cockpit</image:caption>
+    </image:image>
+     <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Flying/Flying3.jpeg</image:loc>
+      <image:title>Flying Experience</image:title>
+      <image:caption>Runway Landing</image:caption>
+    </image:image>
+     <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Flying/Flying4.jpeg</image:loc>
       <image:title>Flying Experience</image:title>
       <image:caption>View from the cockpit</image:caption>
     </image:image>
@@ -65,12 +86,32 @@
     <image:image>
       <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing1.jpeg</image:loc>
       <image:title>Skiing Adventures</image:title>
-      <image:caption>Winter sports photography</image:caption>
+      <image:caption>View from the top of Blackcomb on 7th heaven</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing2.jpeg</image:loc>
       <image:title>Skiing Adventures</image:title>
-      <image:caption>Mountain slopes</image:caption>
+      <image:caption>Me Skiing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing3.jpeg</image:loc>
+      <image:title>Skiing Adventures</image:title>
+      <image:caption>Skiing with lake in the background</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing4.jpeg</image:loc>
+      <image:title>Skiing Adventures</image:title>
+      <image:caption>Skiing in the trees</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing5.jpeg</image:loc>
+      <image:title>Skiing Adventures</image:title>
+      <image:caption>Steep skiing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tommitchell.me/Images/Skiing/Skiing6.jpeg</image:loc>
+      <image:title>Skiing Adventures</image:title>
+      <image:caption>Side of mountain view</image:caption>
     </image:image>
   </url>
   
@@ -78,7 +119,7 @@
   <url>
     <loc>https://www.tommitchell.me/AGU23-SOHO.pdf</loc>
     <lastmod>2025-04-19</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
   
