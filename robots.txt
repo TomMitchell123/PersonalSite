@@ -10,6 +10,7 @@ Allow: /index.html
 Allow: /images.html
 Allow: /styles.css
 Allow: /scripts.js
+Allow: /AGU23-SOHO.pdf
 
 # Allow access to image directories
 Allow: /Images/
@@ -17,7 +18,6 @@ Allow: /Images/Project-Images/
 Allow: /Images/Sunsets/
 Allow: /Images/Skiing/
 Allow: /Images/Flying/
-Allow: /Images/Fishing/
 
 # Disallow any potential sensitive directories
 # (These don't exist on your site currently but are good practice)
@@ -26,6 +26,11 @@ Disallow: /admin/
 Disallow: /drafts/
 Disallow: /temp/
 
+# Specific instructions for Google's main crawler
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
 # Specific instructions for Google's image crawler
 User-agent: Googlebot-Image
 Allow: /Images/
@@ -33,12 +38,17 @@ Allow: /*.jpeg$
 Allow: /*.jpg$
 Allow: /*.png$
 
-# Specific instructions for Bing's crawler
+# Specific instructions for Bing's main crawler
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
-# Crawl delay directive (optional - helps prevent server overload)
-# Crawl-delay: 1
+# Specific instructions for Bing's image crawler
+User-agent: BingBot-Image
+Allow: /Images/
+Allow: /*.jpeg$
+Allow: /*.jpg$
+Allow: /*.png$
 
 # Sitemap location
-Sitemap: https://www.tommitchell.me/sitemap.xml 
+Sitemap: https://www.tommitchell.me/sitemap.xml
