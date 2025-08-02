@@ -3,175 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Mitchell</title>
+    <title>Tom Mitchell - Software Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Tom Mitchell - Software Engineer and Data Scientist specializing in web development, data analysis, and scientific research applications.">
-    <meta name="keywords" content="Tom Mitchell, software engineer, data scientist, web development, UMD, climate science, astronomy research">
+    <meta name="description" content="Tom Mitchell - Software Engineer specializing in full-stack development and data science">
     <meta name="author" content="Tom Mitchell">
-    <!-- Open Graph tags for better social media sharing -->
-    <meta property="og:title" content="Tom Mitchell - Software Engineer">
-    <meta property="og:description" content="Portfolio showcasing software engineering projects, data science work, and research experience.">
-    <meta property="og:image" content="https://www.tommitchell.me/Images/profile-image.jpg">
-    <meta property="og:url" content="https://www.tommitchell.me">
-    <link rel="canonical" href="https://www.tommitchell.me/" />
-    <!-- Simple Favicon -->
     <link rel="icon" href="/favicon.ico">
 </head>
 <body>
-    <div class="gradient-overlay"></div>
-    <div class="scroll-indicator"></div>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#work-experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header class="header">
-        <div class="header-content">
-            <h1 class="animated-name" id="animatedName">Tom Mitchell</h1>
-            <p id="tagline"></p>
-            <div class="contact-buttons" style="opacity: 0;">
-                <a href="mailto:tommit2265@gmail.com" target="_blank" class="social-button">
-                    <i class="fas fa-envelope"></i>
-                    <span class="button-text">Email</span>
-                </a>
-                <a href="https://www.linkedin.com/in/tom-mitchell-umd/" target="_blank" class="social-button">
-                    <i class="fab fa-linkedin"></i>
-                    <span class="button-text">LinkedIn</span>
-                </a>
-                <a href="https://github.com/TomMitchell123" target="_blank" class="social-button">
-                    <i class="fab fa-github"></i>
-                    <span class="button-text">GitHub</span>
-                </a>
+    <div class="noise"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">TM</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="down-arrow">&#8595;</div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
-    <main class="container">
-        <section id="about" class="section about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Tom Mitchell, a passionate software engineer with a unique blend of expertise in computer science, mathematics, astronomy, and meteorology. My diverse background allows me to approach problems from multiple angles, creating impactful projects that bridge the gap between scientific research and practical applications.</p>
-            <p>Whether it's building user-friendly web applications or diving deep into data analysis, I'm always eager to take on new challenges. When I'm not coding, you can find me skiing, playing <a href="https://www.chess.com/member/gbntomm" target="_blank" class="inline-link">chess</a>, flying, and chasing sunsets (<a href="images.html" class="inline-link">Photos</a>). I'm constantly seeking new opportunities to learn, grow, and collaborate on exciting projects.</p>
-            <p>Check out my projects below!</p>
-        </section>
-        <section id="projects" class="section projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="projects-item">
-                    <img src="./Images/Project-Images/ConnectionsRacer.png" alt="Connections Racer">
-                    <h3>Connections Racer</h3>
-                    <p>A multiplayer version of the NYT Connections game. Built with React, Node.js, and Socket.io. MongoDB for database. Render for hosting.</p>
-                    <a href="https://www.connectionracer.com/" target="_blank" class="project-link">View Project</a>
-                </div>
-                <div class="projects-item">
-                    <img src="./Images/Project-Images/AI-Counselor.png" alt="AI Counselor">
-                    <h3>AI Counselor</h3>
-                    <p>An AI assistant that processes university course PDFs and responds to natural language queries. Developed the backend using Python and Flask.</p>
-                    <a href="https://devpost.com/software/ai-counselor" target="_blank" class="project-link">View Project</a>
-                </div>
-            </div>
-        </section>
-        <section id="work-experience" class="section">
-            <h2>Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Apple </h3>
-                        <p class="timeline-date">Jun 2025 - Aug 2025</p>
-                        <p>Developed and launched a full-stack web app to automate and standardize QA workflows, increasing productivity and quality for 50+ Apple employees.</p>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Tom Mitchell</h1>
+                    <p class="hero-title">Software Engineer</p>
+                    <p class="hero-description">Passionate about full-stack development, data science, and creating software that makes a difference.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Center for Advanced Transportation Technology Laboratory (CATT Lab)</h3>
-                        <p class="timeline-date">Sep 2024 - May 2025</p>
-                        <p>Optimized data ingestion, cleaning, and performance for RITIS (Regional Integrated Traffic Information System) to enhance traffic management decision-making, improve data quality, and streamline user experience for transportation professionals.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>US Army DEVCOM Army Research Laboratory (ARL)</h3>
-                        <p class="timeline-date">Jun 2024 - Aug 2024</p>
-                        <p>Leveraged realtime transportation data to develop a cutting-edge machine learning model. This model was designed to classify traffic incidents, enhancing reporting of incidents and improving road safety.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Astronomy Research</h3>
-                        <p class="timeline-date">Mar 2023 - Jan 2024</p>
-                        <p>Abstract of my research was accepted at the American Geophysical Union (AGU23) Annual Conference.</p>
-                        <a href="AGU23-SOHO.pdf" target="_blank" rel="noopener noreferrer" class="view-button">
-                            <i class="fas fa-eye"></i> View Poster
-                        </a>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Climate Science Research</h3>
-                        <p class="timeline-date">May 2023 - Aug 2023</p>
-                        <p>Used the Cheyenne supercomputer to find meaningful correlations between polar storms and sea ice loss.</p>
+                <div class="hero-visual">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-dot"></span>
+                            <span class="code-dot"></span>
+                            <span class="code-dot"></span>
+                        </div>
+                        <div class="code-content">
+                            <span class="code-line desktop-only"><span class="code-comment">// Software Engineer</span></span>
+                            <span class="code-line desktop-only"><span class="code-keyword">struct</span> <span class="code-type">Developer</span> {</span>
+                            <span class="code-line desktop-only">    <span class="code-keyword">let</span> <span class="code-property">role</span>: <span class="code-type">String</span> = <span class="code-string">"Software Engineer"</span></span>
+                            <span class="code-line desktop-only">    <span class="code-keyword">var</span> <span class="code-property">skills</span>: [<span class="code-type">String</span>] = [<span class="code-string">"Python"</span>, <span class="code-string">"Swift"</span>, <span class="code-string">"Web Dev"</span>]</span>
+                            <span class="code-line desktop-only">    <span class="code-keyword">let</span> <span class="code-property">passion</span>: <span class="code-type">String</span> = <span class="code-string">"Building great software"</span></span>
+                            <span class="code-line desktop-only">}</span>
+                            <span class="code-line desktop-only"></span>
+                            <span class="code-line desktop-only"><span class="code-keyword">let</span> <span class="code-variable">tom</span> = <span class="code-type">Developer</span>()</span>
+                            
+                            <span class="code-line mobile-only"><span class="code-keyword">let</span> <span class="code-variable">tom</span> = <span class="code-type">Developer</span>(</span>
+                            <span class="code-line mobile-only">    <span class="code-property">role</span>: <span class="code-string">"Software Engineer"</span>,</span>
+                            <span class="code-line mobile-only">    <span class="code-property">skills</span>: [<span class="code-string">"Swift"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Web"</span>],</span>
+                            <span class="code-line mobile-only">    <span class="code-property">passion</span>: <span class="code-string">"Building great software"</span></span>
+                            <span class="code-line mobile-only">)</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="section contact-info">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via Email or connect with me on LinkedIn and GitHub.</p>
-            <div class="contact-buttons">
-                <a href="mailto:tommit2265@gmail.com" target="_blank" class="social-button">
-                    <i class="fas fa-envelope"></i>
-                    <span class="button-text">Email</span>
-                </a>
-                <a href="https://www.linkedin.com/in/tom-mitchell-umd/" target="_blank" class="social-button">
-                    <i class="fab fa-linkedin"></i>
-                    <span class="button-text">LinkedIn</span>
-                </a>
-                <a href="https://github.com/TomMitchell123" target="_blank" class="social-button">
-                    <i class="fab fa-github"></i>
-                    <span class="button-text">GitHub</span>
-                </a>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a software engineer with a passion for building impactful solutions that bridge the gap between research and practical applications. I'm also a student at the University of Maryland studying Computer Science.</p>
+                        <p>My experience spans from full-stack development to data science research, giving me a unique perspective on solving complex problems across different domains.</p>
+                        <p>When I'm not coding, you can find me skiing, playing chess, or flying. Check out some of my <a href="images.html" class="inline-link">photos</a> from my adventures!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h3>Apple Inc.</h3>
+                                <span class="experience-role">Software Engineering Intern</span>
+                                <span class="experience-location">Cupertino, CA</span>
+                                <span class="experience-date">Jun 2025 - Aug 2025</span>
+                            </div>
+                            <p>Created automated tests for iOS, macOS, and visionOS apps and built an internal website for QA teams to identify failing tests, helping 50+ engineers work more efficiently.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Swift</span>
+                                <span class="tech-tag">Web Development</span>
+                                <span class="tech-tag">QA Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h3>CATT Lab</h3>
+                                <span class="experience-role">Software Developer Intern</span>
+                                <span class="experience-location">Remote</span>
+                                <span class="experience-date">Sep 2024 - May 2025</span>
+                            </div>
+                            <p>Enhanced data ingestion pipelines for transportation systems and improved performance by identifying bottlenecks, resulting in faster data access for traffic management professionals.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Data Pipeline</span>
+                                <span class="tech-tag">Performance</span>
+                                <span class="tech-tag">Transportation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h3>US Army Research Lab</h3>
+                                <span class="experience-role">Data Analytics Intern</span>
+                                <span class="experience-location">Adelphi, MD</span>
+                                <span class="experience-date">Jun 2024 - Aug 2024</span>
+                            </div>
+                            <p>Built an AI traffic incident detection model with 92% accuracy and engineered data pipelines to process 10,000+ dashcam images, enhancing road safety through rapid response alerts.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h3>UMD Astronomy Department</h3>
+                                <span class="experience-role">Astronomy Researcher</span>
+                                <span class="experience-location">College Park, MD</span>
+                                <span class="experience-date">Mar 2023 - Jan 2024</span>
+                            </div>
+                            <p>Implemented automation scripts for telescope imagery correction, increasing processing efficiency by 200% and co-authored findings presented at the AGU23 Conference.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Image Processing</span>
+                                <span class="tech-tag">Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./Images/Project-Images/ConnectionsRacer.png" alt="Connections Racer">
+                        </div>
+                        <div class="project-content">
+                            <h3>Connections Racer</h3>
+                            <p>A multiplayer version of NYT Connections with real-time gameplay and dynamic leaderboards.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <a href="https://www.connectionracer.com/" target="_blank" class="project-btn">
+                                <span>View Project</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./Images/Project-Images/AI-Counselor.png" alt="AI Counselor">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Counselor</h3>
+                            <p>AI assistant that processes university course PDFs and answers student queries using natural language processing.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">PDF Processing</span>
+                            </div>
+                            <a href="https://devpost.com/software/ai-counselor" target="_blank" class="project-btn">
+                                <span>View Project</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="contact-intro">I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="contact-grid">
+                    <a href="mailto:tmitch@terpmail.umd.edu" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>tmitch@terpmail.umd.edu</p>
+                    </a>
+                    <a href="https://github.com/TomMitchell123" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>@TomMitchell123</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tom-mitchell-umd/" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>tom-mitchell-umd</p>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Tom Mitchell. All rights reserved.</p>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tom Mitchell</p>
+        </div>
     </footer>
-    <div class="background-animation"></div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <script src="scripts.js"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Tom Mitchell",
-      "url": "https://www.tommitchell.me",
-      "jobTitle": "Software Engineer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Center for Advanced Transportation Technology Laboratory"
-      },
-      "alumniOf": "University of Maryland",
-      "knowsAbout": ["Software Engineering", "Data Science", "Climate Science", "Astronomy"],
-      "sameAs": [
-        "https://www.linkedin.com/in/tom-mitchell-umd/",
-        "https://github.com/TomMitchell123"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Tom Mitchell - Software Engineer",
-      "url": "https://www.tommitchell.me",
-      "description": "Portfolio of Tom Mitchell, Software Engineer and Data Scientist"
-    }
-    </script>
 </body>
 </html>
 
