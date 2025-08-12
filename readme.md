@@ -3,6 +3,6 @@
 Personal portfolio site: [tommitchell.me](https://www.tommitchell.me)
 
 **Contact:**  
-- tmitch@terpmail.umd.edu
+- tommit2265@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/tom-mitchell-umd/)  
 - [GitHub](https://github.com/TomMitchell123)
